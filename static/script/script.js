@@ -20,7 +20,7 @@ menu.addEventListener('click', e => {
 /*visualizar los items del sub menu*/
 for (i = 0; i < btn_principal.length; i++) {
     btn_principal[i].addEventListener('click', e => {
-        var pos = e.target.id;
+        var pos = e.target.value;
         row[pos].classList.toggle("visible-submenu_items");
     });
 }
