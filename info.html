@@ -1,0 +1,174 @@
+{% extends 'general.html' %}{% load static %}
+<!--/////////////////////-->
+{%block title%} Informacion{% endblock%}
+<!--/////////////////////////////////-->
+{% block link%}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/info.css' %}"> {%endblock%}
+<!--/////////////////////////////////-->
+{% block content%}
+
+<!--Contenido primario-->
+<!--Informacion principal-->
+
+<div class="content">
+    <img class="fondo-primario" src="{% static 'img/fondos/peliculas/normal/26nyeon.png' %}" alt="Fondo">
+    <div class="estado"><span id="estado_pel">En cartelera</span></div>
+
+    <img class="portada" src="{% static 'img/portadas/26-years.jpg' %}" alt="Portada">
+</div>
+<!-- Interaccion con la informacion -->
+<div class="box_interaccion">
+    <div class="content_interaccion">
+        <button class="btn_interaccion" id="lista"><i class="fas fa-list"></i></button>
+        <button class="btn_interaccion" id="MeGusta"><i class="fas fa-thumbs-up"></i><span class=""> 0</span>%</button>
+        <button class="btn_interaccion" id="NoMeGusta"><i class="fas fa-thumbs-down"></i><span id="p_nm"> 0</span>%</button>
+    </div>
+</div>
+<!--listas para guardar-->
+<div class="container_list">
+    <div class="list">
+        <div class="caja_list-1">
+            <h2>Guardar en :</h2>
+            <button id="agregar">Agregar lista  <i class="fas fa-plus-square"  id="btn_list"></i></button>
+
+        </div>
+        <ul class="lista_guardar">
+            <li class="lista_guardar-items">
+                <div class="lista_btn-text">Favorito<i class="fas fa-heart  icon-list_btn"></i></div>
+            </li>
+            <li class="lista_guardar-items">
+                <div class="lista_btn-text">Ver Mas tarde
+                    <i class="far fa-square icon-list_btn"></i></div>
+            </li>
+        </ul>
+        <div class="btn_list-listo ">
+            <i class="fas fa-check "></i>listo
+        </div>
+    </div>
+</div>
+<!--boton subir-->
+<div class="content-button_arriba ">
+    <div class="button_arriba "><i class="fas fa-arrow-up "></i></div>
+</div>
+<!--Contenido Secundario-->
+<!--descripcion de la pelicula-->
+<div class="content_resumen">
+    <div class="content_column">
+        <h1 class="subtitulo">CAST</h1>
+        <div class="overflow">
+            <ul class="container--grid">
+                <li class="des_artistas "><a href="#">Jin Goo</a></li>
+                <li class="des_artistas "><a href="#">Han Hye-jin</a></li>
+                <li class="des_artistas "><a href="#">Im Seul-ong</a></li>
+                <li class="des_artistas "><a href="#">Bae Soo-bin</a></li>
+                <li class="des_artistas "><a href="#">Lee Kyung-young</a></li>
+            </ul>
+            <ul class="container--grid">
+                <li class="des_artistas "><a href="# ">Gwak Jin-bae</a></li>
+                <li class="des_artistas "><a href="# ">Shim Mi-jin</a></li>
+                <li class="des_artistas "><a href="# ">Gwon Jeong-hyeok</a></li>
+                <li class="des_artistas "><a href="# "> Kim Ju-an</a></li>
+                <li class="des_artistas "><a href="# "> Kim Gap-se</a></li>
+            </ul>
+        </div>
+        <button id="pasar"><i class="fas fa-angle-left dis_i " ></i></button>
+        <button id="regresar"><i class="fas fa-angle-right dis_i "></i></button>
+        <div class="overflow_view">
+            <h2 class="subtitulo">SINOPSIS</h2>
+            <p class="descripcion_text">Hace 26 años, las tropas estatales recibieron la orden de abrir fuego contra civiles de la ciudad de Gwangju que se manifestaban como parte de un movimiento democrático. Miles de ellos fueron asesinados. Ahora, un equipo de personas decide
+                involucrarse en un plan para condenar a la persona responsable de la masacre.</p>
+        </div>
+    </div>
+</div>
+<div class="content_informacion ">
+    <button class="informacion-btn_tra btn_activado" value="1">Trailer:</button>
+    <button class="informacion-tra" value="2">Valoracion:</button>
+
+    <div class="informacion-trailler">
+        <iframe class="triller " src="https://www.youtube.com/embed/vcVce8AqgCY " title="26 Years " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+    </div>
+    <!--seccion aprovacion-->
+    <div class="informacion-aprovacion">
+        <div class="font--30"><span id="valor_cal ">0</span>%</div>
+        <div class="estrellas">
+            <button class="btn_estrellas " name="1 "><i class="fas fa-dizzy "></i></button>
+            <button class="btn_estrellas " name="2 "><i class="fas fa-sad-tear "></i></button>
+            <button class="btn_estrellas " name="3 "><i class="fas fa-meh "></i></button>
+            <button class="btn_estrellas " name="4 "><i class="fas fa-grin-alt "></i></button>
+            <button class="btn_estrellas " name="5 "><i class="fas fa-grin-stars "></i></button>
+        </div>
+        <div class="descripcion_apr ">
+            <label class="informacion_descripcion"> MUY MALO</label>
+            <label class="informacion_descripcion"> MALO</label>
+            <label class="informacion_descripcion"> REGULAR</label>
+            <label class="informacion_descripcion">BUENO</label>
+            <label class="informacion_descripcion"> EXCELENTE</label>
+        </div>
+    </div>
+
+    <div class="informacion_pelicula">
+        <p class="titulo_pel ">Genero:
+            <h2 id="genero "></h2>
+        </p>
+        <p class="titulo_pel ">Fecha:
+            <h2 id="fecha "></h2>
+        </p>
+        <p class="titulo_pel ">Duracion:
+            <h2 id="duracion "></h2>
+        </p>
+        <p class="titulo_pel ">Director:
+            <h2 id="director "></h2>
+        </p>
+        <p class="titulo_pel ">clasificacion:
+            <h2 id="director "></h2>
+        </p>
+        <p class="titulo_pel ">compañia:
+            <h2 id="director "></h2>
+        </p>
+    </div>
+</div>
+
+<div class="container_car">
+    <div id="carrito"><i class="fas fa-cart-plus"></i>Agregar al carrito</div>
+</div>
+
+
+<!--Comentarios de la pagina-->
+<div class="content_comentario">
+    <div class="comentario_container">
+        <input id="comentarios" type="text " placeholder="hacer un comentario ">
+        <h4 class="title_com ">Comentarios</h4>
+        <h5 class="title_com " id="subtitle_com ">Mas relevantes:</h5>
+        <div class="comentario_comentar ">
+            <i class="fas fa-user-circle icon_responsive"></i>
+            <p class="usuario_com ">User 1</p>
+            <p class="comentario ">Me encanto la pelicula es muy buena</p>
+            <p class="fecha_com ">Fecha:<span>10/05/21</span></p>
+            <p class="hora_com ">hora:<span>21:15</span></p>
+
+        </div>
+        <div class="comentario_comentar ">
+            <i class="fas fa-user-circle icon_responsive"></i>
+            <p class="usuario_com ">User 1</p>
+            <p class="comentario ">Me encanto la pelicula es muy buena</p>
+            <p class="fecha_com ">Fecha:<span>10/05/21</span></p>
+            <p class="hora_com ">hora:<span>21:15</span></p>
+
+        </div>
+        <div class="comentario_comentar ">
+            <i class="fas fa-user-circle icon_responsive"></i>
+            <p class="usuario_com ">User 1</p>
+            <p class="comentario ">Me encanto la pelicula es muy buena</p>
+            <p class="fecha_com ">Fecha:<span>10/05/21</span></p>
+            <p class="hora_com ">hora:<span>21:15</span></p>
+
+        </div>
+        <button class="ver_com ">Ver mas</button>
+    </div>
+</div>
+
+{% endblock%}
+<!--/////////////////////////////////-->
+{% block script%}
+<script src="{% static 'script/info.js' %} "></script>
+{% endblock%}

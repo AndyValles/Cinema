@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" name="viewport" content="width=device-width,user-scalable=yes, initial-scale=0.1,maximum-scalable=3.0,minimum-scalable=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'styles/pop.css' %}" type="text/css"> {% block link %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <!--inicio del menu-->
+    <header id="index">
+        <nav>
+            <div class="menu">
+                <ul class="container menu_principal">
+                    <li class="contet_shop">
+                        <i class="fas fa-shopping-cart icon_responsive "></i>
+                        <div class="">0</div>
+                    </li>
+                    <li class="contet_user">
+                        <a href="{% url 'usuario' %}"></a><i class="fas fa-user-circle icon_responsive "></i></a>
+                    </li>
+                    <li class="content_logo"><img src="{% static 'img/iconos/logo_box_header.svg' %} " alt="Logo " class="Logo"></li>
+                    <li class="menu_nav"><i class="fas fa-bars icon_responsive "></i></li>
+                </ul>
+                <ul class="menu_submenu">
+                    <li class="">
+                        <a href="{% url 'casa' %} " class="text_title-header" id="inicio ">Inicio</a>
+                    </li>
+                    <li class="items_principals">
+                        <p class="text_title-header " id="0" value="1">Categorias</p>
+                        <ul class="menu_submenu-items" id="sub_cat">
+                            <li class="items"><a class="">Accion</a></li>
+                            <li class="items"><a class="">Comedia</a></li>
+                            <li class="items"><a class="">Dramatica</a></li>
+                            <li class="items"><a class="">Romantica</a></li>
+                            <li class="items"><a class="">Terror</a></li>
+                            <li class="items"><a class="">Horror</a></li>
+                            <li class="items"><a class="">Musicales</a></li>
+                            <li class="items"><a class="">Aventura</a></li>
+                            <li class="items"><a class="">Crimen</a></li>
+                            <li class="items"><a class="">Fantasia</a></li>
+                        </ul>
+                    </li>
+                    <li class="items_principals">
+                        <p class="text_title-header" id="1" value="2">Servicios</p>
+                        <ul class="menu_submenu-items" id="">
+                            <li class="items"><a class="">Promociones</a></li>
+                            <li class="items"><a class="">Atencion al cliente</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="opc_principals"><a href="" class="text_title-header" id="q_s ">¿Quienes somos?</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!--fin del menu-->
+
+    {% block content%} {% endblock %}{%include 'pop.html' %}
+
+    <!--Pie de pagina-->
+    <footer class="container content_footer ">
+
+        <div class="row">
+            <h2 class="text_title-footer">CONTACTOS:</h2>
+            <h6 class="text_subtitle-footer">Tel:01-999-999-99</h6>
+            <h6 class="text_subtitle-footer">cel: 999-999-99</h6>
+
+            <a href="https://www.facebook.com/ "><img src="{% static 'img/iconos/facebook.png'%} " alt="f " class="img_responsive-social "></a>
+            <a href="https://www.twitter.com/ "><img src="{% static 'img/iconos/twitter.png'%} " alt="t " class="img_responsive-social "></a>
+            <a href="https://www.whatsapp.com/ "><img src="{% static 'img/iconos/whatsapp.png'%} " alt="w " class="img_responsive-social "></a>
+            <a href="https://www.google.com/ "><img src="{% static 'img/iconos/google.png'%} " alt="g " class="img_responsive-social "></a>
+
+        </div>
+
+        <div class="row">
+            <h2 class="text_title-footer">LEGAL:</h2>
+            <button class="btn_none-texto btn-secc" value="1">Libro de reclamaciones</a>
+            <button class="btn_none-texto btn-secc" value="2">Politica de la corporacion</button>
+            <button class="btn_none-texto btn-secc" value="3">Terminos y condiciones</a>
+        </div>
+        <div class="row">
+            <h2 class="text_title-footer">OTROS SERVICIOS:</h2>
+            <button class="btn_none-texto btn-secc" value="4">Trabaja con nosotros</button>
+            <br>
+            <img src="{% static 'img/iconos/logo_box_header.svg' %} " alt="LOGO " class="Logo-footer ">
+        </div>
+    </footer>
+
+    <!-- Fin de pie de pagina-->
+    <script src="{% static 'script/script.js'%} "></script>
+
+    {% block script %}{% endblock %}
+</body>
+
+</html>

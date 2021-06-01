@@ -1,0 +1,279 @@
+{% extends 'general.html'%}{% load static%}
+<!--/////////////////////////-->
+{% block title%} home {%endblock%}
+<!--/////////////////////////-->
+{% block link%}
+<link rel="Stylesheet" type="text/css" href="{% static 'styles/home.css' %}"> {%endblock%}
+<!--/////////////////////////-->
+{%block content%}
+<div class="container_flex">
+    <div class="container_slider grid--1">
+        <div class="slider_row">
+            <div class="Slider">
+                <section class="carrucel_items">
+                    <img src="{% static 'img/portadas/La_villana.jpg'%}" alt="" class="caratula">
+                    <img src="{% static 'img/fondos/gif/moto.gif' %}" alt="" class="item" id="item_1" title="VER MAS">
+
+                    <article class="descripcion" id="descripcion_1">
+                        <h2 class="titulo_c">LA VILLANA</h2>
+                        <h6> Acción ♠ 129 min ♠ 2017 ♠ Corea del Sur</h6>
+                        <p class="descripcion_text">Educada para ser una asesina implacable, Sook-hee es reclutada por el servicio de inteligencia coreano para fingir ser una actriz y actuar como agente durmiente. Cuando dos hombres entran en su vida, la aparente calma de su nueva
+                            rutina estalla y la máquina de matar que es Sook-hee se adueña de nuevo de sus inst...</p>
+                    </article>
+
+                </section>
+                <section class="carrucel_items">
+                    <img src="{% static 'img/portadas/Raid.jpg'%}" alt="" class="refer_image caratula" id="caratula_1">
+                    <img src="{% static 'img/fondos/gif/lucha.gif'%}" alt="" class="item" id="item_2">
+
+                    <article class="descripcion" id="descripcion_1">
+                        <h2 class="titulo_c">REDADA ASESINA</h2>
+                        <h6>Acción ♠ 101 min ♠ 2011 ♠ Indonesia</h6>
+                        <p class="descripcion_text">Un miembro novato de un equipo de élite de comandos, Rama (Iko Uwais) es instruido mientras sus camaradas siguen con su misión para detener a un brutal criminal llamado Tama (Ray Sahetapy). Sin embargo, el plan del equipo es descubierto
+                            y Tama ofrece un gran premio a los criminales de su edifici...</p>
+                    </article>
+
+                </section>
+                <section class="carrucel_items">
+                    <img src="{% static 'img/portadas/Redada_asesina_2.jpg'%}" alt="" class=" refer_image caratula" id="caratula_1">
+                    <img src="{% static 'img/fondos/gif/m.gif' %}" alt="" class="item" id="item_3">
+                    <article class="descripcion" id="descripcion_1">
+                        <h2 class="titulo_c">REDADA ASESINA 02</h2>
+                        <h6> Acción ♠ 150 min ♠ 2014 ♠ Indonesia</h6>
+                        <p class="descripcion_text">Dos horas después de los acontecimientos de la primera película , los oficiales supervivientes de la redada en el apartamento de Yakarta, Rama, Bowo y un teniente Wahyu detenido, se encuentran con el teniente Bunawar por consejo
+                            del hermano de Rama, Andi. Bunawar, el jefe de una unidad de investigación intern...
+                        </p>
+                    </article>
+                </section>
+            </div>
+            <section class="content_visualizador">
+                <button class="visualizador"><i class="fas fa-angle-left dis_i" ></i></button>
+            </section>
+        </div>
+        <div class="content">
+            <button class="btn" id="prev"><i class="fas fa-angle-left dis_i" ></i></button>
+            <p class="info_buton"><span id="pos">1</span>/3</p>
+            <button class="btn" id="next"><i class="fas fa-angle-right dis_i"></i></button>
+        </div>
+    </div>
+    <!--Fin del slider-->
+    <!--boton subir-->
+    <div class="content-button_arriba ">
+        <div class="button_arriba"><i class="fas fa-arrow-up"></i></div>
+    </div>
+    <!--Comienzo de la caja estrenos-->
+    <div class="caja_contenido grid--2">
+        <h2 class="subtitulo">Estrenos:</h2>
+        <div class="container_estrenos">
+            <div class="seccion_e">
+                <iframe class="triller" src="https://www.youtube.com/embed/RIKOJP9PHP0" title="Trailer 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+            <div class="seccion_e">
+                <iframe class="triller" src="https://www.youtube.com/embed/eSv_qioC-as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+            <div class="seccion_e">
+                <iframe class="triller" src="https://www.youtube.com/embed/_spU5LOIjNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+        </div>
+        <button class="btn_vm">Ver mas</button>
+        <div class="content_button">
+            <button class="btn_E" id="prev_e"><i class="fas fa-angle-left dis_i" ></i></button>
+            <button class="btn_E" id="next_e"><i class="fas fa-angle-right dis_i"></i></button>
+        </div>
+    </div>
+
+
+
+    <!--Fin de la caja de estrenos-->
+    <!--Contenido de la Cartelera-->
+    <div class="container_cartelera grid--3">
+        <h2 class="subtitulo">En cartelera: </h2>
+        <div class="row_cartelera">
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/Colonia_V.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+
+                <div class="informacion">
+                    <h4>COLONIA V</h4>
+                    <h4> Ciencia ficción ♠ 94 min ♠ 2013 ♠ Estados Unidos</h4>
+                    <h4>En un futuro próximo en el que la Tierra está congelada, un grupo de sobrevivientes, obligados a vivir bajo tierra, se embarca en una misión para llegar a otro puesto de avanzada para investigar por qué ha dejado de enviarles señales.
+                    </h4>
+
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/Border.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+
+                <div class="informacion">
+                    <h4>BORDER</h4>
+                    <h4> Drama ♠ 101 min ♠ 2018 ♠ Suecia</h4>
+                    <h4>Tina es una agente de aduanas implacable, célebre por su intuición casi inhumana. Sin embargo, cuando Vore, un tipo de aspecto sospechoso, pasa junto a ella, Tina siente que, por primera vez en su vida, enfrenta un desafío que tal
+                        vez pierda.
+                    </h4>
+                </div>
+
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/j_w.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+
+                <div class="informacion">
+                    <h4>JHON WICK</h4>
+                    <h4> Acción ♠ 114 min ♠ 2014 ♠ Estados Unidos</h4>
+                    <h4>Después de que John Wick pierda a su esposa, Helen, por una enfermedad terminal, recibe un cachorro beagle llamado Daisy de su difunta esposa para ayudarlo a sobrellevar su dolor. A pesar del comportamiento estoico de John, él se une
+                        con el cachorro y pasan el día conduciendo en su Ford Mustang Boss 429 1969. En una estación de servicio, se encuentra con un trío de gánster...</h4>
+                </div>
+
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/parasitos.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>PARASITOS</h4>
+                    <h4> Drama ♠ 132 min ♠ 2019 ♠ Corea del Sur</h4>
+                    <h4>Tanto Gi Taek como su familia están sin trabajo. Cuando su hijo mayor, Gi Woo, empieza a impartir clases particulares en la adinerada casa de los Park, las dos familias, que tienen mucho en común pese a pertenecer a dos mundos totalmente
+                        distintos, entablan una relación de resultados imprevisibles.</h4>
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/Mortal.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>MORTAL</h4>
+                    <h4> Acción ♠ 104 min ♠ 2020 ♠ Noruega</h4>
+                    <h4>Eric es un joven estadounidense que está recorriendo Noruega como mochilero cuando es detenido por la muerte de un joven local. Durante su detención, Christine una joven psicóloga, comienza a creer a Eric e intenta entender qué ocurre.
+                    </h4>
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/Archive.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>ARCHIVE</h4>
+                    <h4> Ciencia ficción ♠ 105 min ♠ 2020 ♠ Reino Unido</h4>
+                    <h4>Año 2038: George Almore trabaja en una inteligencia artificial que parezca verdaderamente humana. Su último prototipo ya está en su fase más delicada y arriesgada, en especial, porque el objetivo de Almore debe permanecer oculto a
+                        cualquier precio: reunirse con su mujer fallecida.</h4>
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/En_la_niebla.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>EN LA NIEBLA</h4>
+                    <h4> Drama ♠ 127 min ♠ 2012 ♠ Bielorrusia</h4>
+                    <h4>Segunda Guerra Mundial, año 1942. En la frontera rusa, los partisanos de la resistencia bielorrusa luchan encarnizadamente contra la ocupación nazi. A través de la historia de dos partisanos cuyos caminos confluyen, el relato denuncia
+                        la irracionalidad y la crueldad de la guerra. Adaptación de la novela homónima del prolífico escritor bielorruso Vasiliy Vladimirovich Bykov.</h4>
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/Asura.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>Asura</h4>
+                    <h4> Animación ♠ 75 min ♠ 2012 ♠ Japón</h4>
+                    <h4>Una serie de desastres naturales azotan Tokio en mitad del siglo XV. Es entonces cuando Asura cae en el mundo.</h4>
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/Tenet.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>Tenet</h4>
+                    <h4> Ciencia ficción ♠ 150 min ♠ 2020 ♠ Reino Unido</h4>
+                    <h4>Un agente secreto emprende una misión que se desarrolla más allá del tiempo real, para intentar prevenir una Tercera Guerra Mundial.</h4>
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/historias-de-miedo.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>Historias de Mied...</h4>
+                    <h4> Terror ♠ 111 min ♠ 2019 ♠ Estados Unidos</h4>
+                    <h4>Un grupo de adolescentes debe resolver el misterio que rodea a una serie de muertes macabras en la lúgubre mansión de la familia Bellows, un lugar que en el pueblo todos saben que está maldito.</h4>
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/logan.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>LOGAN</h4>
+                    <h4> Drama ♠ 135 min ♠ 2017 ♠ Estados Unidos</h4>
+                    <h4>Sin sus poderes, por primera vez, Wolverine es verdaderamente vulnerable. Después de una vida de dolor y angustia, sin rumbo y perdido en el mundo donde los X-Men son leyenda, su mentor Charles Xavier lo convence para asumir una última
+                        misión: proteger a una joven que será la única esperanza para la raza mutante... </h4>
+                </div>
+            </div>
+            <div class="seccion_t">
+                <img class="item_x" src="{% static 'img/portadas/Vivo.jpg'%}" alt="Portada">
+                <div class="costo">
+                    <p>Costo: S/ 00.00</p>
+                </div>
+                <div class="informacion">
+                    <h4>VIVO</h4>
+                    <h4> Terror ♠ 98 min ♠ 2020 ♠ Corea del Sur</h4>
+                    <h4>Un virus arrasa con una ciudad coreana y Joon-woo intenta mantenerse a salvo encerrándose dentro de su apartamento. Justo cuando pierde la esperanza, descubre a otro superviviente.</h4>
+                </div>
+            </div>
+            <button class="btn_vm">ver mas</button>
+        </div>
+    </div>
+    <!--Fin de la Cartelera-->
+    <!--Contenidos de Proximos-->
+    <div class="contenido_p grid--4">
+        <h2 class="subtitulo">Proximos:</h2>
+        <div class="content_p">
+            <div class="seccion_p">
+                <img src="{% static 'img/portadas/Looper.jpg'%}" alt="Portada" class="item_x">
+                <div class="costo">
+                    <p>Costo: S/0.00</p>
+                </div>
+            </div>
+            <div class="seccion_p">
+                <a href="{% url 'info_pelicula' %}">
+                    <img src="{% static 'img/portadas/26-years.jpg'%}" alt="Portada" class="item_x" id="hola">
+                </a>
+                <div class="costo">
+                    <p>Costo: S/0.00</p>
+                </div>
+            </div>
+            <div class="seccion_p">
+                <img src="{% static 'img/portadas/cEc.jpg'%}" alt="Portada" class="item_x">
+                <div class="costo">
+                    <p>Costo: S/0.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_p-button">
+            <button class="btn_p" id="prev_p"><i class="fas fa-angle-left dis_i"></i></button>
+            <button class="btn_p" id="next_p"><i class="fas fa-angle-right dis_i"></i></button>
+        </div>
+        <button class="btn_vm">Ver mas</button>
+    </div>
+</div>
+{%endblock%}
+<!--//////////////-->
+{% block script %}
+<script src="{% static 'script/home.js' %}"></script>{% endblock %}
