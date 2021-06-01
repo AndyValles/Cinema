@@ -1,0 +1,266 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+    /*Politicas de la empresa*/
+    /*Comienzo de las Ventanas emergentes*/
+    
+    .contentVentanaE {
+        z-index: 300;
+    }
+    
+    .libro_r,
+    .politica,
+    .Termino-condiciones {
+        opacity: 100%;
+        position: fixed;
+        top: 21px;
+        background: red;
+        color: white;
+        visibility: hidden;
+        width: 80%;
+        height: 35rem;
+        margin: 0px 55px;
+        overflow: scroll;
+    }
+    
+    .input_personality {
+        position: relative;
+        width: 50%;
+        top: 21px;
+        left: 5px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.514);
+        z-index: 0;
+    }
+    
+    .libro_r {
+        background: url(../img/fondos/2021012512111269812.jpg)no-repeat !important;
+        background-position: center center !important;
+        background-size: cover;
+        border-radius: 0px !important;
+    }
+    
+    .entrada_f:focus {
+        border-bottom: 1px solid rgb(42, 5, 253);
+        outline: none;
+    }
+    
+    .libro_r h2 {
+        color: rgb(255, 255, 255);
+        position: relative;
+        margin: 1.5rem 38px;
+        font-size: 1.5rem;
+        font-family: -apple-system;
+    }
+    
+    .libro_r form {
+        background: rgba(0, 0, 0, 0.63);
+        padding: 30px;
+        margin: 0px 20px;
+    }
+    
+    .libro_r h3 {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .medida_in {
+        font-size: 14px;
+        padding: 5px 0px;
+        width: 100%;
+    }
+    
+    .libro_r p,
+    .libro_r h6 {
+        color: rgb(255, 255, 255);
+        font-size: 0.8rem;
+    }
+    
+    .libro_r h6 {
+        padding-top: 10px;
+    }
+    
+    .col_NA {
+        background: rgba(255, 255, 255, 0.2);
+        width: 50%;
+        outline: none;
+        border: none;
+        font-size: 13px;
+        padding: 5px 0px;
+        color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    
+    .col_r:focus {
+        border-bottom: 1px solid rgb(255, 0, 0);
+    }
+    
+    .date {
+        background: rgba(255, 251, 251, 0.644);
+        color: aliceblue;
+        outline: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        border: none;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    .date:focus {
+        background: rgba(255, 250, 250, 0.562);
+        color: rgb(0, 241, 12);
+        border-bottom: 2px solid rgb(2, 255, 36);
+    }
+    
+    .Documento {
+        padding: 7px 0px;
+        width: 100%;
+    }
+    
+    .Documento:focus {
+        bottom: 2px solid rgb(0, 0, 0);
+        outline: red;
+    }
+    
+    #anuncio {
+        width: 100%;
+        height: 500%;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 100px;
+    }
+    
+    #anuncio:focus {
+        border: 1px solid rgb(55, 0, 255);
+        outline: none;
+    }
+    
+    .texture_bt_file {
+        background: rgb(255, 252, 252);
+        color: rgb(0, 0, 255);
+        padding: 20px 50px;
+        width: 100%;
+    }
+    
+    .enviar {
+        color: rgb(0, 0, 255);
+        background: rgb(0, 0, 0);
+        padding: 5px 0px;
+        width: 50%;
+        border: 2px solid rgb(0, 0, 255);
+        border-radius: 5px;
+    }
+    
+    .enviar:hover {
+        color: rgb(0, 255, 21);
+        border: 2px solid rgb(0, 255, 13);
+    }
+    
+    .enviar:active {
+        color: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+    }
+    
+    .entrada_f {
+        position: relative;
+        color: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        z-index: 100;
+    }
+    
+    #salir {
+        position: fixed;
+        font-size: 25px;
+        left: 29rem;
+        top: 30px;
+        visibility: hidden;
+        color: rgb(248, 1, 1);
+        background: none;
+        border: none;
+        outline: none;
+    }
+    
+    #salir:active {
+        color: rgb(11, 26, 9);
+        font-size: 36px;
+    }
+    
+    .title_v {
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Playfair Display;
+    }
+    
+    .politica h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding: 0px 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .politica p,
+    .Termino-condiciones p {
+        font-size: 13px;
+        color: rgb(255, 255, 255);
+        margin: 10px 30px;
+    }
+    
+    .Termino-condiciones h3 {
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        margin: 0px 60px;
+    }
+    /*fin de las Ventanas emergentes*/
+    
+    @media screen and (max-width:600px) {
+        .contentVentanaE {
+            position: fixed;
+            display: none;
+            background: rgba(0, 0, 0, 0.438);
+            width: 500vh!important;
+            height: 100%;
+            top: 0px;
+            transition: all 0.5s;
+        }
+    }
+    
+    @media screen and (min-width:768px) {}
+    
+    @media screen and (min-width:1024px) {
+        /*ventanas emergentes*/
+        .contentVentanaE {
+            position: fixed;
+            visibility: hidden;
+            background: rgba(0, 0, 0, 0.438);
+            width: 500vh!important;
+            height: 100%;
+            top: 0px;
+            transition: all 0.5s;
+        }
+        .libro_r,
+        .politica,
+        .Termino-condiciones {
+            top: 1px;
+            margin: 0px 120px;
+        }
+        .input_personality {
+            width: 20%;
+            top: 27px;
+            font-size: 15px;
+        }
+        #salir {
+            left: 72rem;
+            top: 40px;
+        }
+        .medida_in {
+            transition: all .5s;
+            padding: 10px 0px !important;
+        }
+        /*fin de ventanas emergentes*/
+    }
