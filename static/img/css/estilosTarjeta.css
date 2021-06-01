@@ -1,0 +1,160 @@
+@import url('http://fonts.gloogleapis.com/css?family=Montserrat:400,700|Pacifico');
+*{
+	box-sizing: border-box; 
+
+
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;/*fuente del documento*/
+	margin: 0;
+	padding: 0;
+	background: url('../imagenes/iamg_m.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+
+	display: flex; 		/* organiza los elementos de forma flexible */
+	flex-wrap: wrap; /* los elementos que no caben pasaran ala diguiente linea */
+	justify-content: space-between;/* para alinear los elementos en el eje principal que x defecto es horizonatal */
+	align-items: center;
+
+}
+h1{
+	width: 0;
+	height: 10px;
+	margin: 0;
+	top: 0;
+	text-align: center;
+	font-size: 25px;
+	color: red;
+	font-family: cursive;
+}
+
+
+form{
+	width: 450px;
+	height: 650px;
+	background: orange;
+	color: black;
+	top:50%;
+	left: 50%;
+	position:absolute;
+
+	box-sizing: border-box;
+	padding: 10px 20px;
+	transform: translateX(-50%) translateY(-50%); 
+
+}
+
+
+
+ input{
+	width: 100%;
+	margin-bottom: 5px;
+
+}
+
+.ntarjeta{
+	width: 22%;
+	height: 30px;
+	line-height: 50px;
+	border-radius: 5px;
+	
+}
+
+.fechac{
+	width: 47%;
+	height: 30px;
+}
+.select{
+	width: 95%;
+	height: 30px;
+}
+.form-control{
+	width:95%; 
+	height: 30px;
+}
+
+.cvv{
+	width: 97%;
+	height: 30px;
+}
+
+
+ label{
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 5px;
+	color:purple;
+	font-family: cursive;
+}
+
+
+
+
+
+@media screen and (min-width: 480px ){/* es un medidad del movil*/
+
+	
+
+	body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../imagenes/iamg_m.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: -1000vh;
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+form{
+	width: 450px;
+	height: 650px;
+	background: transparent;
+	color: black;
+	top:50%;
+	left: 50%;
+	position:absolute;
+
+	box-sizing: border-box;
+	padding: 10px 20px;
+	
+
+
+}
+
+input{
+	margin-bottom: 100
+	margin-bottom: 5px;
+}
+
+.select{
+	width: 95%;
+	height: 30px;
+}
+
+@media screen and (min-width: 1024px){
+
+	form{
+		width: 500px;
+		height: 700px;
+		background: transparent;
+		color: black;
+		top:50%;
+		left: 50%;
+		position:absolute;
+
+		box-sizing: border-box;
+		padding: 20px 30px;
+		
+
+
+	}
+
+}
