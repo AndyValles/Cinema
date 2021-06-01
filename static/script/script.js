@@ -21,7 +21,6 @@ menu.addEventListener('click', e => {
 for (i = 0; i < btn_principal.length; i++) {
     btn_principal[i].addEventListener('click', e => {
         var pos = e.target.value;
-        alert(pos);
         row[pos].classList.toggle("visible-submenu_items");
     });
 }
