@@ -35,6 +35,9 @@ li {
     list-style: none;
 }
 
+#btn_none{
+background:none;
+border:none;}
 
 /*comienzo del header*/
 
