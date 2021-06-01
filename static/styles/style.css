@@ -76,7 +76,7 @@ li {
 
 .contet_shop,
 .contet_user,
-.opc_principals {
+.items_principals {
     cursor: pointer;
 }
 
@@ -446,7 +446,7 @@ li {
         width: 50%;
         height: 11vh;
     }
-    .opc_principals:hover .menu_submenu-items {
+    .items_principals:hover .menu_submenu-items {
         /*contenedores de los textos para la interaccion*/
         visibility: visible;
         border-bottom: 5px solid rgb(38, 38, 153);
