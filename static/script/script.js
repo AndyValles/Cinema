@@ -1,6 +1,6 @@
 let menu = document.querySelector(".menu_nav");
 let submenu = document.querySelector(".menu_submenu");
-let btn_principal = document.querySelectorAll(".items_principals");
+let btn_principal = document.querySelectorAll(".text_title-header");
 let row = document.querySelectorAll(".menu_submenu-items");
 let button_up = document.querySelector(".content-button_arriba");
 /*footer*/
