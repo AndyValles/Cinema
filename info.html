@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Type" name="viewport" content="width=device-width,user-scalable=yes, initial-scale=0.1,maximum-scalable=3.0,minimum-scalable=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
-    <link rel="stylesheet" href="{% static 'styles/style.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'styles/pop.css' %}" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{% static 'styles/info.css' %}">
+    <link rel="stylesheet" href="static/styles/style.css" type="text/css">
+    <link rel="stylesheet" href="static/styles/pop.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="static/styles/info.css">
     <title>informacion</title>
 </head>
 
@@ -23,14 +23,14 @@
                         <div class="">0</div>
                     </li>
                     <li class="contet_user">
-                        <a href="{% url 'usuario' %}"></a><i class="fas fa-user-circle icon_responsive "></i></a>
+                        <a href="usuario.html"></a><i class="fas fa-user-circle icon_responsive "></i></a>
                     </li>
-                    <li class="content_logo"><img src="{% static 'img/iconos/logo_box_header.svg' %} " alt="Logo " class="Logo"></li>
+                    <li class="content_logo"><img src="static/img/iconos/logo_box_header.svg" alt="Logo " class="Logo"></li>
                     <li class="menu_nav"><i class="fas fa-bars icon_responsive "></i></li>
                 </ul>
                 <ul class="menu_submenu">
                     <li class="">
-                        <a href="{% url 'casa' %} " class="text_title-header" id="inicio ">Inicio</a>
+                        <a href="index.html" class="text_title-header" id="inicio">Inicio</a>
                     </li>
                     <li class="items_principals">
                         <p class="text_title-header " id="0" value="1">Categorias</p>
@@ -65,10 +65,10 @@
 <!--Informacion principal-->
 
 <div class="content">
-    <img class="fondo-primario" src="{% static 'img/fondos/peliculas/normal/26nyeon.png' %}" alt="Fondo">
+    <img class="fondo-primario" src="static/img/fondos/peliculas/normal/26nyeon.png" alt="Fondo">
     <div class="estado"><span id="estado_pel">En cartelera</span></div>
 
-    <img class="portada" src="{% static 'img/portadas/26-years.jpg' %}" alt="Portada">
+    <img class="portada" src="static/img/portadas/26-years.jpg" alt="Portada">
 </div>
 <!-- Interaccion con la informacion -->
 <div class="box_interaccion">
@@ -190,7 +190,7 @@
 <!--Comentarios de la pagina-->
 <div class="content_comentario">
     <div class="comentario_container">
-        <input id="comentarios" type="text " placeholder="hacer un comentario ">
+        <input id="comentarios" type="text " placeholder="hacer un comentario">
         <h4 class="title_com ">Comentarios</h4>
         <h5 class="title_com " id="subtitle_com ">Mas relevantes:</h5>
         <div class="comentario_comentar ">
@@ -366,10 +366,10 @@
             <h6 class="text_subtitle-footer">Tel:01-999-999-99</h6>
             <h6 class="text_subtitle-footer">cel: 999-999-99</h6>
 
-            <a href="https://www.facebook.com/ "><img src="{% static 'img/iconos/facebook.png'%} " alt="f " class="img_responsive-social "></a>
-            <a href="https://www.twitter.com/ "><img src="{% static 'img/iconos/twitter.png'%} " alt="t " class="img_responsive-social "></a>
-            <a href="https://www.whatsapp.com/ "><img src="{% static 'img/iconos/whatsapp.png'%} " alt="w " class="img_responsive-social "></a>
-            <a href="https://www.google.com/ "><img src="{% static 'img/iconos/google.png'%} " alt="g " class="img_responsive-social "></a>
+            <a href="https://www.facebook.com/ "><img src="static/img/iconos/facebook.png" alt="f " class="img_responsive-social "></a>
+            <a href="https://www.twitter.com/ "><img src="static/img/iconos/twitter.png" alt="t " class="img_responsive-social "></a>
+            <a href="https://www.whatsapp.com/ "><img src="static/img/iconos/whatsapp.png" alt="w " class="img_responsive-social "></a>
+            <a href="https://www.google.com/ "><img src="static/img/iconos/google.png" alt="g " class="img_responsive-social "></a>
 
         </div>
 
@@ -383,13 +383,13 @@
             <h2 class="text_title-footer">OTROS SERVICIOS:</h2>
             <button class="btn_none-texto btn-secc" value="4">Trabaja con nosotros</button>
             <br>
-            <img src="{% static 'img/iconos/logo_box_header.svg' %} " alt="LOGO " class="Logo-footer ">
+            <img src="static/img/iconos/logo_box_header.svg" alt="LOGO " class="Logo-footer ">
         </div>
     </footer>
 
     <!-- Fin de pie de pagina-->
-    <script src="{% static 'script/script.js'%} "></script>
-    <script src="{% static 'script/info.js' %} "></script>
+    <script src="static/script/script.js"></script>
+    <script src="static/script/info.js"></script>
     
 </body>
 
