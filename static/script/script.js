@@ -45,6 +45,7 @@ for (i = 0; i < btn_secc.length; i++) {
         if (pos < btn_secc.length - 1) {
             document.querySelector("#salir").classList.add("visible-modal");
         }
+         document.querySelector(".fondo").classList.add("visible-modal");
         switch (pos) {
             case 0:
                 document.querySelector(".libro_r").classList.add("visible-modal");
@@ -56,6 +57,7 @@ for (i = 0; i < btn_secc.length; i++) {
                 document.querySelector(".Termino-condiciones").classList.add("visible-modal");
                 break;
             case 3:
+                 document.querySelector(".fondo").classList.remove("visible-modal");
                 alert("trabaja");
                 break;
         }
@@ -65,6 +67,7 @@ for (i = 0; i < btn_secc.length; i++) {
 }
 
 document.querySelector("#salir").addEventListener("click", e => {
+      document.querySelector(".fondo").classList.remove("visible-modal");
     document.querySelector("#salir").classList.remove("visible-modal");
     document.querySelector(".libro_r").classList.remove("visible-modal");
     document.querySelector(".politica").classList.remove("visible-modal");
