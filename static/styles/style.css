@@ -424,6 +424,12 @@ border:none;}
     .informacion_descripcion {
         margin: 2px 20px;
     }
+    .menu_submenu {
+        height: 5vh;
+    }
+    .visible-submenu_items {
+        height: 0px;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -447,7 +453,6 @@ border:none;}
         overflow: visible;
         top: 0px;
         width: 50%;
-        height: 11vh;
     }
     .items_principals:hover .menu_submenu-items {
         /*contenedores de los textos para la interaccion*/
