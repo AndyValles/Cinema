@@ -330,69 +330,71 @@
 </div>
 <!--modal-->
 <div class="contentVentanaE">
+    <div class="fondo"></div>
     <button id="salir">X</button>
     <div class="libro_r">
-        <h2>Enviar Solicitud</h2>
-        <form>
-            <h3>Correo electrónico</h3>
-            <h1 class="input_personality">example@gmail.com</h1>
+        <h2 class="title_pop">Enviar Solicitud</h2>
+        <form class="form_submit">
+            <h3 class="subtitulo_pop">Correo electrónico</h3>
+
             <input type="email" class="medida_in entrada_f" onfocus="entrada();" required>
-            <h3>Tipo de documento</h3>
+            <h3 class="subtitulo_pop">Tipo de documento</h3>
             <select class="Documento">
                 <option >Seleccionar</option>
                 <option value="DNI">DNI</option>
                 <option value="CE">CE</option>
                 <option value="Pasaporte">Pasaporte</option>
             </select>
-            <p>Seleccione el tipo de documento</p>
-            <h3>Número de Documento</h3>
-            <h1 class="input_personality">Ingrese numero</h1>
+            <p class="subtext">Seleccione el tipo de documento</p>
+            <h3 class="subtitulo_pop">Número de Documento</h3>
+
             <input type="text" class="medida_in entrada_f" onfocus="entrada();" required>
-            <p>Escriba el número de documento</p>
-            <h3>Fecha</h3>
+            <p class="subtext">Escriba el número de documento</p>
+            <h3 class="subtitulo_pop">Fecha</h3>
             <input type="date" class="date" required>
-            <p>Fecha del reclamo</p>
-            <h3>Nombres y apellidos</h3>
+            <p class="subtext">Fecha del reclamo</p>
+            <h3 class="subtitulo_pop">Nombres y apellidos</h3>
             <input type="text" placeholder="Ingrese nombre" class="col_NA" required>
             <input type="text" placeholder="Ingrese apellido " class="col_NA" required>
-            <p>Nombres y apellidos completos del tarjeta habiente</p>
-            <h3>Domicilio del consumidor</h3>
+            <p class="subtext">Nombres y apellidos completos del tarjeta habiente</p>
+            <h3 class="subtitulo_pop">Domicilio del consumidor</h3>
             <input type="text" placeholder="Direccion" class="medida_in entrada_f" required>
-            <p>Agregue domicilio del consumidor</p>
-            <h3>Teléfono de contacto</h3>
+            <p class="subtext">Agregue domicilio del consumidor</p>
+            <h3 class="subtitulo_pop">Teléfono de contacto</h3>
             <input type="tel" placeholder="Ingrese telefono" class="medida_in entrada_f" required>
-            <h3>Cine</h3>
+            <h3 class="subtitulo_pop">Cine</h3>
             <input type="text" placeholder="Ingrese cine" class="medida_in entrada_f" required>
-            <p>Cine seleccionado en la compra</p>
-            <h3> Motivo</h3>
+            <p class="subtext">Cine seleccionado en la compra</p>
+            <h3 class="subtitulo_pop"> Motivo</h3>
             <input type="text" placeholder="Ingrese El movivo del reclamo" class="medida_in entrada_f">
-            <h3>Servicio o Producto</h3>
+            <h3 class="subtitulo_pop">Servicio o Producto</h3>
             <input type="text" placeholder="Ingrese Servicio" class="medida_in entrada_f" required>
-            <h3>Monto(S/)</h3>
+            <h3 class="subtitulo_pop">Monto(S/)</h3>
             <input type="number" placeholder="Ingrese monto" class="medida_in entrada_f">
-            <h3>Asunto</h3>
+            <h3 class="subtitulo_pop">Asunto</h3>
             <input type="text" placeholder="Ingrese Asunto" class="medida_in entrada_f" required>
-            <h3>Reclamo o Queja</h3>
+            <h3 class="subtitulo_pop">Reclamo o Queja</h3>
             <select class="Documento">
                 <option>Seleccionar</option>
                 <option value="Queja">Queja</option>
                 <option value="Reclamo">Reclamo</option>
             </select>
-            <h3>Descripción</h3>
-            <textarea id="anuncio"></textarea>
-            <p>Ingrese los detalles de esta solicitud. Un integrante de nuestro personal de soporte responderá en breve.</p>
-            <h3>Pedido</h3>
+            <h3 class="subtitulo_pop">Descripción</h3>
+            <textarea class="anuncio"></textarea>
+            <p class="subtext">Ingrese los detalles de esta solicitud. Un integrante de nuestro personal de soporte responderá en breve.</p>
+            <h3 class="subtitulo_pop">Pedido</h3>
             <input type="text" placeholder="Ingrese Pedido" class="medida_in entrada_f" required>
-            <h6>Me encuentro conforme con los términos consignados en el contenido de mi disconformidad (queja / reclamacion)</h6>
-            <input type="checkbox" class="check" required>
-            <h6>Disclaimer</h6>
-            <input type="checkbox" class="check" required>
-            <p>Mediante la presentación de mi disconformidad (queja / reclamo) a través del presente Libro de Reclamaciones Virtual, otorgo mi consentimiento y autorizo expresamente a <span class="cine"></span> del Perú S.R.L. a realizar el tratamiento (recolección,
+            <br>
+            <input type="checkbox" class="check" id="check_1" required>
+            <label for="check_1" class="subtext-medium">Me encuentro conforme con los términos consignados en el contenido de mi disconformidad (queja / reclamacion)</label>
+            <br>
+            <input type="checkbox" class="check" id="diclamer" required>
+            <label for="diclamer" class="subtext-medium">Disclaimer</label>
+            <p class="subtext">Mediante la presentación de mi disconformidad (queja / reclamo) a través del presente Libro de Reclamaciones Virtual, otorgo mi consentimiento y autorizo expresamente a <span class="cine"></span> del Perú S.R.L. a realizar el tratamiento (recolección,
                 almacenamiento, procesamiento, transmisión y uso) de mis datos personales proporcionados, con la finalidad que se le brinde oportuna atención. En cualquier circunstancia, el tratamiento de los datos se encontrará protegido y su acceso
                 estará limitado a aquellas personas debidamente autorizadas para manejarlos, quienes lo realizarán respetando todas las condiciones de seguridad y confidencialidad que establece la normativa de la materia.</p>
-            <p>Archivos adjuntos</p>
+            <p class="subtext">Archivos adjuntos</p>
             <div><input type="file" class="texture_bt_file"></div>
-
             <br>
             <button class="enviar">Enviar</button>
         </form>
@@ -400,28 +402,28 @@
 
     <div class="politica">
         <div class="informacion"></div>
-        <h1 class="title_v">Aviso de Privacidad de <span class="cine"></span></h1>
-        <h1>1. Contenido de los Datos Personales</h1>
-        <p>
+        <h1 class="title_pop">Aviso de Privacidad de <span class="cine"></span></h1>
+        <h1 class="subtext-medium">1. Contenido de los Datos Personales</h1>
+        <p class="subtext_center">
             De acuerdo con la Ley, se entiende como “Datos Personales” cualquier información concerniente a una persona física identificada o identificable. Para efectos del presente Aviso de Privacidad, de manera enunciativa mas no limitativa, se entenderán como
             “Datos Personales”:</p>
-        <h1>1.1. Datos generales
+        <h1 class="subtext-medium">1.1. Datos generales
         </h1>
-        <p>Nombre(s) y apellidos, fecha de nacimiento, edad, sexo, estado civil, número de hijos, domicilio, teléfono fijo (de casa u oficina), teléfono celular, correo electrónico, y los datos e información que conforme a la Ley sean concernientes a una
+        <p class="subtext_center">Nombre(s) y apellidos, fecha de nacimiento, edad, sexo, estado civil, número de hijos, domicilio, teléfono fijo (de casa u oficina), teléfono celular, correo electrónico, y los datos e información que conforme a la Ley sean concernientes a una
             persona física identificada o identificable.
         </p>
-        <h1>1.2. Datos relacionados con solicitudes de empleo</h1>
-        <p>Cuando ingreses o proporciones Datos Personales en o para la bolsa de trabajo de <span class="cine"></span>®, además de los datos generales, se considerarán Datos Personales la información sobre nivel educativo, experiencia laboral y cualquier
+        <h1 class="subtext-medium">1.2. Datos relacionados con solicitudes de empleo</h1>
+        <p class="subtext_center">Cuando ingreses o proporciones Datos Personales en o para la bolsa de trabajo de <span class="cine"></span>®, además de los datos generales, se considerarán Datos Personales la información sobre nivel educativo, experiencia laboral y cualquier
             información relacionada con el currículum vitae que nos envíes. En virtud de lo anterior, <span class="cine"></span>® hace de tu conocimiento que cualquier vacante de trabajo disponible será publicada a través de la plataforma en línea, a
             través de la cual los interesados podrán postularse a través de un registro en línea, por lo que cualquier Dato Personal referente a solicitudes de empleo que usted entregue a <span class="cine"></span>®, será tratado conforme al Aviso de
             Privacidad publicado en esta plataforma en línea propiedad de <span class="cine"></span>®.</p>
-        <h1>1.3. Revistas y transacciones en línea</h1>
-        <p>Al momento de que nos proporciones tus datos bancarios en cualquiera de nuestros medios de venta o comercialización de los productos y/o servicios de <span class="cine"></span>®, se entenderá que desde ese momento estás otorgando tu consentimiento
+        <h1 class="subtext-medium">1.3. Revistas y transacciones en línea</h1>
+        <p class="subtext_center">Al momento de que nos proporciones tus datos bancarios en cualquiera de nuestros medios de venta o comercialización de los productos y/o servicios de <span class="cine"></span>®, se entenderá que desde ese momento estás otorgando tu consentimiento
             expreso para que <span class="cine"></span>® pueda realizar el tratamiento de dichos datos personales conforme a las finalidades del tratamiento establecidas en el numeral 4 inciso B) del presente Aviso de Privacidad.
         </p>
-        <h1>1.4. Datos de menores de edad
+        <h1 class="subtext-medium">1.4. Datos de menores de edad
         </h1>
-        <p>Las páginas de <span class="cine"></span>®, los sitios y micrositios en ellas contenidos, los formatos de inscripción a cualquiera de nuestros programas o servicios, así como la recopilación de información que tenga como fin el llevar a cabo cualquiera
+        <p class="subtext_center">Las páginas de <span class="cine"></span>®, los sitios y micrositios en ellas contenidos, los formatos de inscripción a cualquiera de nuestros programas o servicios, así como la recopilación de información que tenga como fin el llevar a cabo cualquiera
             de las finalidades establecidas en el presente Aviso de Privacidad no fueron diseñadas para el uso de niños menores de 10 años de edad. Nosotros no solicitamos información en línea, ni comercializamos u ofertamos productos o servicios en línea,
             a niños menores de 10 años de edad. Es responsabilidad de los titulares menores de edad contar con autorización de los Tutores para que <span class="cine"></span>® dé tratamiento a sus datos. Siendo el caso de que si, por error, obtenemos
             Datos Personales de niños menores de 10 años de edad, eliminaremos esa información de nuestros sistemas. En caso de que por alguna actividad o evento específico, se llegaren a recopilar datos personales de niños menores de 10 años, previo
@@ -430,37 +432,37 @@
         </p>
     </div>
     <div class="Termino-condiciones">
-        <h1 class="title_v">Términos y Condiciones</h1>
-        <p>Al acceder a esta página, usted reconoce haber leído y entendido sus contenidos y manifiesta estar de acuerdo con los mismos. El contenido de esta página, así como sus actualizaciones, son propiedad exclusiva de <span class="cine"></span> de Perú,
+        <h1 class="title_pop">Términos y Condiciones</h1>
+        <p class="subtext_center">Al acceder a esta página, usted reconoce haber leído y entendido sus contenidos y manifiesta estar de acuerdo con los mismos. El contenido de esta página, así como sus actualizaciones, son propiedad exclusiva de <span class="cine"></span> de Perú,
             S.A. de C.V. y se encuentran protegidos por las leyes del Estados , así como por el Derecho Internacional. El contenido de este sitio, sólo debe ser usado como un recurso más de publicidad e información y, en su caso, de la compra de bienes
             y servicios que comercializan <span class="cine"></span> de Perú, S.A. de C.V. o sus empresas subsidiarias, filiales o asociadas. Cualquier uso, incluyendo los publicitarios, republicación, exhibición, ejecución o comercialización del contenido
             de este sitio, incluyendo las marcas o avisos comerciales, en alguna red de cómputo o página de Internet se encuentra estrictamente prohibido sin el previo consentimiento que conste por escrito de
             <span class="cine"></span> de Perú, S.A. de C.V.
         </p>
-        <h3>Las marcas <span class="cine"></span>®, <span class="cine"></span> VIP®, <span class="cine"></span> IMAX®, <span class="cine"></span> Digital®, Macro XE®, 4DX®, Xtreme®, Mi Cine <span class="cine"></span>® Diversión a tu Alcance®,CinemaStar®,
+        <h3 class="subtitulo-center">Las marcas <span class="cine"></span>®, <span class="cine"></span> VIP®, <span class="cine"></span> IMAX®, <span class="cine"></span> Digital®, Macro XE®, 4DX®, Xtreme®, Mi Cine <span class="cine"></span>® Diversión a tu Alcance®,CinemaStar®,
             Cineticket®,
         </h3>
-        <p>así como todas y cada una de las marcas que forman parte de los productos y servicios englobados en el concepto comercialmente conocido como <span class="cine"></span>® y sus diferentes diseños se encuentran debidamente registrados y licenciados
+        <p class="subtext_center">así como todas y cada una de las marcas que forman parte de los productos y servicios englobados en el concepto comercialmente conocido como <span class="cine"></span>® y sus diferentes diseños se encuentran debidamente registrados y licenciados
             a favor de
             <span class="cine"></span> de Perú, S.A. de C.V., por lo que su uso total o parcial está estrictamente prohibido y sujeto a las penas establecidas en las leyes aplicables.</p>
-        <p>Todo el diseño de este sitio, el contenido, incluyendo sus gráficos, fotografías, textos, información y el programa de cómputo asociado, son derechos reservados y exclusivos de <span class="cine"></span>de Perú, S.A. de C.V., con domicilio en
+        <p class="subtext_center">Todo el diseño de este sitio, el contenido, incluyendo sus gráficos, fotografías, textos, información y el programa de cómputo asociado, son derechos reservados y exclusivos de <span class="cine"></span>de Perú, S.A. de C.V., con domicilio en
             <span class="Direccion"></span>.</p>
-        <p>La información contenida en este portal es sólo enunciativa, por lo que de ninguna manera constituye una oferta vinculante que obligue al usuario y a <span class="cine"></span> de Perú, S.A. de C.V., o sus empresas subsidiarias, filiales o asociadas,
+        <p class="subtext_center">La información contenida en este portal es sólo enunciativa, por lo que de ninguna manera constituye una oferta vinculante que obligue al usuario y a <span class="cine"></span> de Perú, S.A. de C.V., o sus empresas subsidiarias, filiales o asociadas,
             a celebrar contrato alguno en relación con tales operaciones
         </p>
-        <p><span class="cine"></span> de Perú, S.A. de C.V., sus empresas subsidiarias, filiales o asociadas, se reservan el derecho de modificar la información aquí contenida cuando lo estime conveniente y sin previo aviso, pudiendo incluso limitar o no
+        <p class="subtext_center"><span class="cine"></span> de Perú, S.A. de C.V., sus empresas subsidiarias, filiales o asociadas, se reservan el derecho de modificar la información aquí contenida cuando lo estime conveniente y sin previo aviso, pudiendo incluso limitar o no
             permitir el acceso a dicha información.</p>
-        <p><span class="cine"></span> de Perú, S.A. de C.V., sus empresas subsidiarias, filiales o asociadas, no se responsabilizan por daños o perjuicios derivados del acceso, uso o mala utilización de los contenidos de este sitio.
+        <p class="subtext_center"><span class="cine"></span> de Perú, S.A. de C.V., sus empresas subsidiarias, filiales o asociadas, no se responsabilizan por daños o perjuicios derivados del acceso, uso o mala utilización de los contenidos de este sitio.
         </p>
-        <p><span class="cine"></span> de Perú, S.A. de C.V., sus empresas subsidiarias, filiales o asociadas, no se responsabilizan de las posibles discrepancias que puedan surgir entre la versión de sus documentos impresos y la versión electrónica de los
+        <p class="subtext_center"><span class="cine"></span> de Perú, S.A. de C.V., sus empresas subsidiarias, filiales o asociadas, no se responsabilizan de las posibles discrepancias que puedan surgir entre la versión de sus documentos impresos y la versión electrónica de los
             mismos publicados en este sitio.</p>
-        <p><span class="cine"></span> de Perú, S.A. de C.V. , sus empresas subsidiarias, filiales o asociadas, no asumen responsabilidad alguna que derive del intercambio de información electrónica entre usuarios de la red Internet y no adquiere ninguna
+        <p class="subtext_center"><span class="cine"></span> de Perú, S.A. de C.V. , sus empresas subsidiarias, filiales o asociadas, no asumen responsabilidad alguna que derive del intercambio de información electrónica entre usuarios de la red Internet y no adquiere ninguna
             responsabilidad por causa de problemas técnicos que se pudieran producir en equipos informáticos que se utilicen durante la conexión a la red Internet, ya sea a través del presente portal o de otras páginas webs.
         </p>
-        <p>Las operaciones que pueden realizarse a través del portal de <span class="cine"></span> de Perú, S.A. de C.V. y/o sus empresas subsidiarias o afiliadas se regirán por los términos y condiciones establecidos por la legislación mercantil y por la
+        <p class="subtext_center">Las operaciones que pueden realizarse a través del portal de <span class="cine"></span> de Perú, S.A. de C.V. y/o sus empresas subsidiarias o afiliadas se regirán por los términos y condiciones establecidos por la legislación mercantil y por la
             Ley Federal de Protección al Consumidor, vigentes en la República Peruana.
         </p>
-        <p>Cualquier controversia que se derive de la aplicación de las mismas se ventilará ante los tribunales y las autoridades de la ciudad de Lima, renunciando las partes expresamente a cualquier otra jurisdicción que les pudiera corresponder por razón
+        <p class="subtext_center">Cualquier controversia que se derive de la aplicación de las mismas se ventilará ante los tribunales y las autoridades de la ciudad de Lima, renunciando las partes expresamente a cualquier otra jurisdicción que les pudiera corresponder por razón
             de su domicilio presente o futuro o por cualquier otra causa.</p>
     </div>
 
