@@ -1,266 +1,189 @@
-    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
     /*Politicas de la empresa*/
     /*Comienzo de las Ventanas emergentes*/
     
-    .contentVentanaE {
-        z-index: 300;
+    * {
+        margin: 0;
+        padding: 0;
     }
     
-    .libro_r,
-    .politica,
-    .Termino-condiciones {
-        opacity: 100%;
-        position: fixed;
-        top: 21px;
-        background: red;
-        color: white;
-        visibility: hidden;
-        width: 80%;
-        height: 35rem;
-        margin: 0px 55px;
-        overflow: scroll;
-    }
-    
-    .input_personality {
-        position: relative;
-        width: 50%;
-        top: 21px;
-        left: 5px;
-        font-size: 12px;
-        color: rgba(255, 255, 255, 0.514);
-        z-index: 0;
-    }
-    
-    .libro_r {
-        background: url(../img/fondos/2021012512111269812.jpg)no-repeat !important;
-        background-position: center center !important;
-        background-size: cover;
-        border-radius: 0px !important;
-    }
-    
-    .entrada_f:focus {
-        border-bottom: 1px solid rgb(42, 5, 253);
-        outline: none;
-    }
-    
-    .libro_r h2 {
-        color: rgb(255, 255, 255);
-        position: relative;
-        margin: 1.5rem 38px;
-        font-size: 1.5rem;
-        font-family: -apple-system;
-    }
-    
-    .libro_r form {
-        background: rgba(0, 0, 0, 0.63);
-        padding: 30px;
-        margin: 0px 20px;
-    }
-    
-    .libro_r h3 {
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .medida_in {
-        font-size: 14px;
-        padding: 5px 0px;
-        width: 100%;
-    }
-    
-    .libro_r p,
-    .libro_r h6 {
-        color: rgb(255, 255, 255);
-        font-size: 0.8rem;
-    }
-    
-    .libro_r h6 {
-        padding-top: 10px;
-    }
-    
-    .col_NA {
-        background: rgba(255, 255, 255, 0.2);
-        width: 50%;
-        outline: none;
-        border: none;
-        font-size: 13px;
-        padding: 5px 0px;
-        color: rgb(255, 255, 255);
-        border-bottom: 1px solid rgb(255, 255, 255);
-    }
-    
-    .col_r:focus {
-        border-bottom: 1px solid rgb(255, 0, 0);
-    }
-    
-    .date {
-        background: rgba(255, 251, 251, 0.644);
-        color: aliceblue;
-        outline: none;
-        padding: 5px 10px;
-        border-radius: 3px;
-        border: none;
-        border-bottom: 2px solid rgb(255, 255, 255);
-    }
-    
-    .date:focus {
-        background: rgba(255, 250, 250, 0.562);
-        color: rgb(0, 241, 12);
-        border-bottom: 2px solid rgb(2, 255, 36);
-    }
-    
-    .Documento {
-        padding: 7px 0px;
-        width: 100%;
-    }
-    
-    .Documento:focus {
-        bottom: 2px solid rgb(0, 0, 0);
-        outline: red;
-    }
-    
-    #anuncio {
-        width: 100%;
-        height: 500%;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-bottom: 100px;
-    }
-    
-    #anuncio:focus {
-        border: 1px solid rgb(55, 0, 255);
-        outline: none;
-    }
-    
-    .texture_bt_file {
-        background: rgb(255, 252, 252);
-        color: rgb(0, 0, 255);
-        padding: 20px 50px;
-        width: 100%;
-    }
-    
-    .enviar {
-        color: rgb(0, 0, 255);
-        background: rgb(0, 0, 0);
-        padding: 5px 0px;
-        width: 50%;
-        border: 2px solid rgb(0, 0, 255);
-        border-radius: 5px;
-    }
-    
-    .enviar:hover {
-        color: rgb(0, 255, 21);
-        border: 2px solid rgb(0, 255, 13);
-    }
-    
-    .enviar:active {
-        color: rgb(255, 0, 0);
-        border: 2px solid rgb(255, 0, 0);
-    }
-    
-    .entrada_f {
-        position: relative;
-        color: rgb(255, 255, 255);
-        background: rgba(255, 255, 255, 0.2);
-        border: none;
-        border-bottom: 1px solid rgb(255, 255, 255);
-        z-index: 100;
-    }
-    
-    #salir {
-        position: fixed;
-        font-size: 25px;
-        left: 29rem;
-        top: 30px;
-        visibility: hidden;
-        color: rgb(248, 1, 1);
+    button {
         background: none;
         border: none;
         outline: none;
     }
     
+    .fondo,
+    .contentVentanaE {
+        width: 100%;
+    }
+    
+    .contentVentanaE {
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3000;
+    }
+    
+    .fondo {
+        position: absolute;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.425);
+        z-index: -1;
+    }
+    
+    #salir {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        color: red;
+        background: white;
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 10px;
+        z-index: 10;
+    }
+    
     #salir:active {
-        color: rgb(11, 26, 9);
-        font-size: 36px;
+        background: black;
+        color: white;
     }
     
-    .title_v {
-        position: relative;
-        margin-top: 20px;
+    .politica,
+    .Termino-condiciones,
+    .libro_r {
+        position: absolute;
+        overflow-y: scroll;
+        width: 90%;
+        height: 90%;
+        background: rgb(255, 0, 0);
+        border-radius: 10px;
+    }
+    
+    .libro_r {
+        background: url(../img/fondos/2021012512111269812.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .politica::-webkit-scrollbar,
+    .Termino-condiciones::-webkit-scrollbar,
+    .libro_r::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    .politica::-webkit-scrollbar-thumb,
+    .Termino-condiciones::-webkit-scrollbar-thumb,
+    .libro_r::-webkit-scrollbar-thumb {
+        background: rgb(255, 3, 3);
+        border-radius: 10px;
+    }
+    
+    .title_pop {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
         text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: Playfair Display;
+        margin: 20px 0px;
     }
     
-    .politica h1 {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        padding: 0px 20px;
+    .form_submit {
+        margin-left: 10px;
+    }
+    
+    .subtitulo-center,
+    .subtitulo_pop {
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+    }
+    
+    .subtext_center,
+    .subtitulo-center {
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+    .subtext_center,
+    .subtext {
+        font-size: 10px;
         color: rgb(255, 255, 255);
     }
     
-    .politica p,
-    .Termino-condiciones p {
-        font-size: 13px;
+    .subtext-medium {
+        font-size: 12px;
         color: rgb(255, 255, 255);
-        margin: 10px 30px;
     }
     
-    .Termino-condiciones h3 {
+    .check {
+        margin: 5px 0px;
+    }
+    
+    .medida_in {
+        outline: none;
+        background: none;
+        border: none;
+        border-bottom: 2px solid rgb(255, 0, 0);
         color: rgb(255, 255, 255);
-        font-size: 17px;
-        margin: 0px 60px;
-    }
-    /*fin de las Ventanas emergentes*/
-    
-    @media screen and (max-width:600px) {
-        .contentVentanaE {
-            position: fixed;
-            display: none;
-            background: rgba(0, 0, 0, 0.438);
-            width: 500vh!important;
-            height: 100%;
-            top: 0px;
-            transition: all 0.5s;
-        }
+        margin: 5px 0px;
+        width: 80%;
+        height: 30px;
     }
     
-    @media screen and (min-width:768px) {}
+    .medida_in::placeholder {
+        color: rgba(255, 255, 255, 0.836);
+    }
     
-    @media screen and (min-width:1024px) {
-        /*ventanas emergentes*/
-        .contentVentanaE {
-            position: fixed;
-            visibility: hidden;
-            background: rgba(0, 0, 0, 0.438);
-            width: 500vh!important;
-            height: 100%;
-            top: 0px;
-            transition: all 0.5s;
-        }
-        .libro_r,
+    .medida_in:focus::placeholder {
+        position: absolute;
+        top: -3px;
+        color: black;
+        font-size: 10px;
+    }
+    
+    .Documento {
+        outline: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
+        width: 90%;
+        height: 30px;
+    }
+    
+    .anuncio {
+        width: 90%;
+        height: 100px;
+    }
+    
+    .texture_bt_file {
+        width: 90%;
+        margin-top: 10px;
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .enviar {
+        background: blue;
+        width: 30%;
+        height: 30px;
+        border-radius: 5px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .enviar:active {
+        background: black;
+    }
+    
+    @media screen and (min-width: 768px) {
         .politica,
-        .Termino-condiciones {
-            top: 1px;
-            margin: 0px 120px;
+        .Termino-condiciones,
+        .libro_r {
+            width: 80%;
+            height: 90%;
         }
-        .input_personality {
-            width: 20%;
-            top: 27px;
-            font-size: 15px;
-        }
-        #salir {
-            left: 72rem;
-            top: 40px;
-        }
-        .medida_in {
-            transition: all .5s;
-            padding: 10px 0px !important;
-        }
-        /*fin de ventanas emergentes*/
     }
